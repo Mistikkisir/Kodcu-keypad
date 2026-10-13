@@ -1,0 +1,65 @@
+{
+	"geode": "4.0.0",
+	"gd": {
+		"android": "*"
+	},
+	"id": "kodcu.keypad",
+	"name": "Kodcu Keypad",
+	"version": "v1.0.0",
+	"developer": "Kodcu",
+	"description": "Ekranda 3 tuşlu klavye overlay'i. Tuş başına 1P / 2P ayarı.",
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Aktif",
+			"default": true
+		},
+		"size": {
+			"type": "float",
+			"name": "Boyut (%)",
+			"description": "Klavye görselinin ekran genişliğine oranı",
+			"default": 60,
+			"min": 20,
+			"max": 100
+		},
+		"opacity": {
+			"type": "int",
+			"name": "Görünürlük",
+			"default": 160,
+			"min": 20,
+			"max": 255
+		},
+		"pos-x": {
+			"type": "float",
+			"name": "Yatay konum (%)",
+			"default": 50,
+			"min": 0,
+			"max": 100
+		},
+		"pos-y": {
+			"type": "float",
+			"name": "Dikey konum (%)",
+			"default": 14,
+			"min": 0,
+			"max": 100
+		},
+		"key1-action": {
+			"type": "string",
+			"name": "Tuş 1 (sol)",
+			"default": "p1-jump",
+			"one-of": ["p1-jump", "p2-jump", "both-jump", "pause", "off"]
+		},
+		"key2-action": {
+			"type": "string",
+			"name": "Tuş 2 (orta)",
+			"default": "p1-jump",
+			"one-of": ["p1-jump", "p2-jump", "both-jump", "pause", "off"]
+		},
+		"key3-action": {
+			"type": "string",
+			"name": "Tuş 3 (sağ)",
+			"default": "p1-jump",
+			"one-of": ["p1-jump", "p2-jump", "both-jump", "pause", "off"]
+		}
+	}
+}
